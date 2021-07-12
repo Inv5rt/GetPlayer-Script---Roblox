@@ -1,0 +1,10 @@
+function GetPlayerFrom(String)
+    local plr
+    local str = String:lower()
+    for i,v in pairs(game:GetService("Players"):GetPlayers())
+       if v.Name:lower():sub(1, #str) == String:lower() then
+          plr = v
+       end
+    end)
+   return plr
+end)
